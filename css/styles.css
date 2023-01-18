@@ -1,0 +1,191 @@
+:root {
+  --accent-color: #404bbf;
+  --primary-color: #434455;
+  --secondary-color: #2e2f42;
+  --basic-white-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--basic-white-color);
+  font-size: 16px;
+}
+
+/* ============= КОМПОНЕНТЫ ============*/
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-color);
+}
+
+.section-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-color);
+}
+
+/* ============= /КОМПОНЕНТЫ ============*/
+
+/* ============= ШАПКА-САЙТА ============*/
+
+.logo-spn {
+  color: #4d5ae5;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* ============= /ШАПКА-САЙТА ============*/
+
+/* ============= ГЕРОЙ ============= */
+.hero {
+  background-color: var(--secondary-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--basic-white-color);
+}
+
+.modal-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+}
+/* ============= /ГЕРОЙ ============= */
+
+/* ============= ПРЕИМУЩЕСТВА =============*/
+
+/* ============= /ПРЕИМУЩЕСТВА =============*/
+
+/* ============= ПРИМЕРЫ РАБОТ =============*/
+
+/* ============= /ПРИМЕРЫ РАБОТ =============*/
+
+/* ============= КОМАНДА =============*/
+
+/* ============= /КОМАНДА =============*/
+
+/* ============= ФУТУЕР =============*/
+
+.footer {
+  background-color: var(--secondary-color);
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #f4f4fd;
+}
+
+.logo-spn-footer {
+  color: #4d5ae5;
+}
+
+.footer-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
+/* ============= /ФУТУЕР =============*/
+
+/* ========== СТИЛИ ДЛЯ ПОРТФОЛИО ========== */
+
+/* ============= DIV-MENU =============== */
+
+.menu-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: #4d5ae5;
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ============= /DIV-MENU =============== */
+
+/* ============= SECTION-PORTFOLIO ============ */

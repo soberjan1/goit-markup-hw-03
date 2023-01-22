@@ -4,12 +4,50 @@
   --secondary-color: #2e2f42;
   --basic-white-color: #ffffff;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-onepad {
+  padding-top: 120px;
 }
 
 body {
@@ -27,6 +65,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .section-subtitle {
@@ -34,6 +73,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 
   color: var(--secondary-color);
 }
@@ -48,6 +88,36 @@ body {
 /* ============= /КОМПОНЕНТЫ ============*/
 
 /* ============= ШАПКА-САЙТА ============*/
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid#E7E9FC;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-address {
+  display: flex;
+  align-items: center;
+}
+.address-menu {
+  display: flex;
+  align-items: center;
+}
 
 .logo-spn {
   color: #4d5ae5;
@@ -61,6 +131,12 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--secondary-color);
+
+  margin-right: 76px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .menu-link {
@@ -89,14 +165,27 @@ body {
   color: var(--accent-color);
 }
 
+.mail {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
 /* ============= /ШАПКА-САЙТА ============*/
 
 /* ============= ГЕРОЙ ============= */
+
 .hero {
   background-color: var(--secondary-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  width: 1440px;
+  height: 600px;
 }
 
 .hero-title {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
@@ -107,6 +196,15 @@ body {
 }
 
 .modal-btn {
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -127,13 +225,52 @@ body {
 
 /* ============= ПРЕИМУЩЕСТВА =============*/
 
+.menu-benefits {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-item-benefits {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 /* ============= /ПРЕИМУЩЕСТВА =============*/
 
 /* ============= ПРИМЕРЫ РАБОТ =============*/
 
+.menu-example {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-item-img {
+  flex-basis: calc((100%-48) / 3);
+}
 /* ============= /ПРИМЕРЫ РАБОТ =============*/
 
 /* ============= КОМАНДА =============*/
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.menu-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.menu-item-team {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-card-content-wrapper {
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px;
+}
 
 /* ============= /КОМАНДА =============*/
 
@@ -141,6 +278,9 @@ body {
 
 .footer {
   background-color: var(--secondary-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
@@ -148,7 +288,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
-
   color: #f4f4fd;
 }
 
@@ -157,6 +296,8 @@ body {
 }
 
 .footer-description {
+  margin-top: 16px;
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
@@ -166,8 +307,17 @@ body {
 /* ========== СТИЛИ ДЛЯ ПОРТФОЛИО ========== */
 
 /* ============= DIV-MENU =============== */
+.menu-portfolio-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
 
 .menu-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -186,6 +336,28 @@ body {
   color: #ffffff;
 }
 
-/* ============= /DIV-MENU =============== */
+.menu-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 
-/* ============= SECTION-PORTFOLIO ============ */
+  margin-top: 72px;
+}
+
+.menu-item-portfolio {
+  flex-basis: calc((100% - 144px) / 9);
+}
+
+.portfolio {
+  padding-top: 96px;
+}
+
+.portfolio-card-content-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+/* ============= /DIV-MENU =============== */
